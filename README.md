@@ -9,23 +9,23 @@ https://www.kaggle.com/danielgrijalvas/movies#movies.csv
 
 In order to clean up the data file, several columns are removed such as year, director, time of release, gross, movies’ name, runtime, votes and writer. After cleaning up the data file, the remaining features are country name, movie genre, movie rating, existence of big star and successfulness.
 
-1) Modified the “Score” columns. For movies with scores that are higher than 7, the movie is considered as successful.
+ 1) Modified the “Score” columns. For movies with scores that are higher than 7, the movie is considered as successful.
 <p align="center">
 <img width="313" alt="screen shot 2019-03-07 at 2 15 19 pm" src="https://user-images.githubusercontent.com/18043807/53993184-7cf9a480-40e3-11e9-958c-a97b27f81cbc.png">
 </p>
-2) Imported CSV file into the database and used SQL to check the amount of unique country variables in the training dataset. Then merged the countries with only has a few records into one group called Other.
+ 2) Imported CSV file into the database and used SQL to check the amount of unique country variables in the training dataset. Then merged the countries with only has a few records into one group called Other.
 <p align="center">
 <img width="209" alt="screen shot 2019-03-07 at 2 21 41 pm" src="https://user-images.githubusercontent.com/18043807/53993479-5be58380-40e4-11e9-8110-fded697ac010.png">
 </p>
-3) Modified the “Budget” columns. When the budget of the movie is over 15 million dollars, the movie is considered as using a big movie star in its production.
+ 3) Modified the “Budget” columns. When the budget of the movie is over 15 million dollars, the movie is considered as using a big movie star in its production.
 <p align="center">
 <img width="323" alt="screen shot 2019-03-07 at 2 23 19 pm" src="https://user-images.githubusercontent.com/18043807/53993722-08276a00-40e5-11e9-9248-c8d4705e5275.png">
 </p>
-4) For the rating column, it rates a film's suitability for certain audiences based on its content.Reference:https://en.wikipedia.org/wiki/Motion_Picture_Association_of_America_film_rating_system
+ 4) For the rating column, it rates a film's suitability for certain audiences based on its content.Reference:https://en.wikipedia.org/wiki/Motion_Picture_Association_of_America_film_rating_system
 <p align="center">
 <img width="291" alt="screen shot 2019-03-07 at 2 27 18 pm" src="https://user-images.githubusercontent.com/18043807/53993903-8257ee80-40e5-11e9-94f1-c2541baa3777.png">
 </p>
-5) Finally, This is the result after selecting and modifying the features.(6820 rows)
+ 5) Finally, This is the result after selecting and modifying the features.(6820 rows)
 <p align="center">
 <img width="289" alt="screen shot 2019-03-07 at 2 33 02 pm" src="https://user-images.githubusercontent.com/18043807/53994084-132eca00-40e6-11e9-8e1e-ef916c625b10.png">
 </p>
