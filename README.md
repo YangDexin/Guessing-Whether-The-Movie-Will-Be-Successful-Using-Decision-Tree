@@ -18,7 +18,7 @@ and successfulness.
 1) Modified the “Score” columns. For movies with scores that are higher than 7, the movie
 is considered as successful.
 
-![project_dexin_yang](https://user-images.githubusercontent.com/18043807/53993074-39069f80-40e3-11e9-911b-9be7058ca78f.jpeg)
+<img width="313" alt="screen shot 2019-03-07 at 2 15 19 pm" src="https://user-images.githubusercontent.com/18043807/53993184-7cf9a480-40e3-11e9-958c-a97b27f81cbc.png">
 
 2) Imported CSV file into the database and used SQL to check the amount of unique
 country variables in the training dataset. Then merged the countries with only has a few
