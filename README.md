@@ -26,3 +26,33 @@ In order to clean up the data file, several columns are removed such as year, di
 <img width="291" alt="screen shot 2019-03-07 at 2 27 18 pm" src="https://user-images.githubusercontent.com/18043807/53993903-8257ee80-40e5-11e9-94f1-c2541baa3777.png">
 </p>
 5) Finally, This is the result after selecting and modifying the features.(6820 rows)
+<p align="center">
+<img width="289" alt="screen shot 2019-03-07 at 2 33 02 pm" src="https://user-images.githubusercontent.com/18043807/53994084-132eca00-40e6-11e9-8e1e-ef916c625b10.png">
+</p>
+
+## 3. Description of algorithm
+Decision tree is used to calculate the successfulness of a movie. Country, genre, rating, big star, and successfulness of past movies are used to build a classifier. The decision tree will check each attribute from the training data, and use these attributes to split data into different subsets. For instance, there are many different types of genres. If one genre is always successful in the market, then this specific genre is considered as an important factor in the movie.
+In my program, I will use a single node to split the data. Firstly, I should find a particular node(root node) in the tree and I have a set of training dataset that falls into this root node. Secondly, I created a decision node for the attribute which has some alternatives such as country, genre, rating, big star and success, and each value of that attribute we are going to create a new child node. Then sorting the dataset into the child nodes. If the user enters “USA” as a country name, I only need to put the USA training example into that subset. So I am going to iterate over all children (all subsets) and look at whether they are prettier or not. If the subset is pure(all positive or all negative), we will stop. Otherwise, we will call the algorithm again on the child node and it will have a subset of the training dataset(not all of them, only the ones that have this particular attribute value). Meanwhile, I have to consider which attribute to split on. I am going to use the measure which is entropy (H(S) = - p0 log2 p0 - p1 log2 p1 - ...). The entropy is a measure of the uncertainty associated with a random variable. Then use information gain to get the certainty of an attribute. It takes each attribute in the dataset to compute the information gain, compute how many bits gained by doing the split. Picking the attribute with highest gain that will provide the most clarity towards the final prediction.
+
+## 4. Design and implementation
+• Environment – programming language, any library/tool, system information
+Programming language:
+I use Java as my programming language.
+Library: I only need to use basic Java Library and a package called DecisionTree.
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.FileReader;
+--> use those library to read the data from csv file.
+import java.util.Scanner;
+--> allow users to enter the data they want.
+import java.util.ArrayList;
+import java.util.List;
+--> put the data from into a list.
+import java.util.TreeSet;
+--> provides total ordering on its elements which are ordered by a Comparator.
+import java.util.Comparator;
+--> it is used to control the order of certain data structures. I use it to compare each
+nodes.
+For convenience, I only use :
+import java.io.*;
+import java.util.*;
