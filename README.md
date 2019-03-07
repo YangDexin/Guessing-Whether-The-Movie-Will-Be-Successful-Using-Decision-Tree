@@ -76,3 +76,6 @@ import java.util.*;
 </p>
 
 ## Output:
+<p align="center">
+<img width="602" alt="screen shot 2019-03-07 at 2 46 25 pm" src="https://user-images.githubusercontent.com/18043807/53994700-d4017880-40e7-11e9-9b48-9b53067a91a5.png">
+</p>
