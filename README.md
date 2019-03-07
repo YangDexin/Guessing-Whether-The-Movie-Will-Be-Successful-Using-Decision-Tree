@@ -38,21 +38,33 @@ In my program, I will use a single node to split the data. Firstly, I should fin
 • Environment – programming language, any library/tool, system information
 Programming language:
 I use Java as my programming language.
+
 Library: I only need to use basic Java Library and a package called DecisionTree.
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileReader;
+
 --> use those library to read the data from csv file.
+
 import java.util.Scanner;
+
 --> allow users to enter the data they want.
+
 import java.util.ArrayList;
 import java.util.List;
+
 --> put the data from into a list.
+
 import java.util.TreeSet;
+
 --> provides total ordering on its elements which are ordered by a Comparator.
+
 import java.util.Comparator;
+
 --> it is used to control the order of certain data structures. I use it to compare each
 nodes.
-For convenience, I only use :
+
+For convenience, I only use : 
 import java.io.*;
 import java.util.*;
