@@ -6,6 +6,7 @@ This program is aimed to predict the success of a movie in advance by utilizing 
 ## 2. Description of training dataset
 Dataset used in this project was downloaded from Kaggle.
 https://www.kaggle.com/danielgrijalvas/movies#movies.csv
+
 In order to clean up the data file, several columns are removed such as year, director, time of release, gross, movies’ name, runtime, votes and writer. After cleaning up the data file, the remaining features are country name, movie genre, movie rating, existence of big star and successfulness.
 
 1) Modified the “Score” columns. For movies with scores that are higher than 7, the movie is considered as successful.
@@ -24,3 +25,4 @@ In order to clean up the data file, several columns are removed such as year, di
 <p align="center">
 <img width="291" alt="screen shot 2019-03-07 at 2 27 18 pm" src="https://user-images.githubusercontent.com/18043807/53993903-8257ee80-40e5-11e9-94f1-c2541baa3777.png">
 </p>
+5) Finally, This is the result after selecting and modifying the features.(6820 rows)
