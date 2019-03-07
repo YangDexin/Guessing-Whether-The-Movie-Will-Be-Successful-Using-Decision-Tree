@@ -17,3 +17,8 @@ In order to clean up the data file, several columns are removed such as year, di
 <img width="209" alt="screen shot 2019-03-07 at 2 21 41 pm" src="https://user-images.githubusercontent.com/18043807/53993479-5be58380-40e4-11e9-8110-fded697ac010.png">
 
 3) Modified the “Budget” columns. When the budget of the movie is over 15 million dollars, the movie is considered as using a big movie star in its production.
+
+<img width="323" alt="screen shot 2019-03-07 at 2 23 19 pm" src="https://user-images.githubusercontent.com/18043807/53993722-08276a00-40e5-11e9-9248-c8d4705e5275.png">
+
+4) For the rating column, it rates a film's suitability for certain audiences based on its content.Reference:https://en.wikipedia.org/wiki/Motion_Picture_Association_of_America_film_rating_system
+
